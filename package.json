@@ -5,20 +5,10 @@
   "main": "fcx-css.scss",
   "style": "fcx-css/css/fcx-css.min.css",
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
-    "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.14.1",
-    "postcss-cli": "^7.1.1",
-    "rimraf": "^3.0.2"
+    "sass": "^1.27.0"
   },
   "scripts": {
-    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output css/fcx-css.css css/fcx-css.css",
-    "build-cleancss": "cleancss -o css/fcx-css.min.css css/fcx-css.css",
-    "build-sass": "node-sass --output-style expanded --source-map true fcx-css.scss css/fcx-css.css",
-    "clean": "rimraf css",
-    "deploy": "npm run clean && npm run build",
-    "start": "npm run build-sass -- --watch"
+    "start": "sass fcx-css.scss css/fcx-css.css --watch"
   },
   "repository": {
     "type": "git",
@@ -33,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/meninomiel/fcx-css/issues"
   },
-  "homepage": "https://github.com/meninomiel/fcx-css#readme"
+  "homepage": "https://github.com/meninomiel/fcx-css#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
