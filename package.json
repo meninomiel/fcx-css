@@ -8,7 +8,7 @@
     "sass": "^1.27.0"
   },
   "scripts": {
-    "start": "sass fcx-css.scss css/fcx-css.css --watch"
+    "start": "node-sass --watch scss -o css"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/meninomiel/fcx-css/issues"
   },
-  "homepage": "https://github.com/meninomiel/fcx-css#readme",
-  "dependencies": {
-    "node-sass": "^4.14.1"
-  }
+  "homepage": "https://github.com/meninomiel/fcx-css#readme"
 }
