@@ -1,0 +1,37 @@
+{
+  "name": "fcx-css",
+  "version": "0.0.0-alpha.1",
+  "description": "Kit de estilos do FCx Labs.",
+  "main": "fcx-css.scss",
+  "style": "fcx-css/css/fcx-css.min.css",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/fcx-css.css css/fcx-css.css",
+    "build-cleancss": "cleancss -o css/fcx-css.min.css css/fcx-css.css",
+    "build-sass": "node-sass --output-style expanded --source-map true fcx-css.scss css/fcx-css.css",
+    "clean": "rimraf css",
+    "deploy": "npm run clean && npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meninomiel/fcx-css.git"
+  },
+  "keywords": [
+    "fcx",
+    "css"
+  ],
+  "author": "Edmiel Leandro <edmiel.leandro@ferreiracosta.com.br> (http://fcx.ferreiracosta.com.br/fcx-css)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meninomiel/fcx-css/issues"
+  },
+  "homepage": "https://github.com/meninomiel/fcx-css#readme"
+}

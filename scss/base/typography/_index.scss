@@ -1,0 +1,59 @@
+@import 'base', '../grid/', '../color/';
+
+body {
+    font-size: var(--fcx-text-base-size);
+    font-family: var(--fcx-font-primary), var(--fcx-font-base);
+}
+
+// tamanhos de texto ---------------------------------------------------|
+
+.text--xxxl {
+    font-size: var(--fcx-text-xxxl);
+}
+
+h1, .text--xxl {
+    font-size: var(--fcx-text-xxl);
+}
+
+h2, .text--xl {
+    font-size: var(--fcx-text-xl);
+}
+
+h3, .text--lg {
+    font-size: var(--fcx-text-lg);
+}
+
+h4, .text--md {
+    font-size: var(--fcx-text-md);
+}
+
+.text--sm, small {
+    font-size: var(--fcx-text-sm);
+}
+
+.text--xs {
+    font-size: var(--fcx-text-xs);
+}
+
+p {
+    line-height: var(--fcx-body-line-height);
+}
+
+@include breakpoint(md) {
+
+    // trocando proporção de texto de acordo com o tamanho de tela (md)
+    :root {
+        --fcx-text-base-size: 1em;
+        --fcx-text-scale-ratio: 1.2;
+    }
+    
+}
+@include breakpoint(sm) {
+
+    // trocando proporção de texto de acordo com o tamanho de tela (sm)
+    :root {
+        --fcx-text-base-size: 1.25em;
+        --fcx-text-scale-ratio: 1.4;
+    }
+    
+}

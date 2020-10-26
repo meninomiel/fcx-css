@@ -1,0 +1,32 @@
+@import 'main', 'grayscale', 'feedback';
+
+:root {
+    // cores de texto padrão
+    --fcx-color-text: var(--fcx-color-darkgray-40);
+    --fcx-color-text-heading: var(--fcx-color-darkgray-60);
+    --fcx-color-link: var(--fcx-color-primary);
+    --fcx-color-link-visited: var(--fcx-color-primary-darker);
+
+    // bordas
+    --fcx-color-border: var(--fcx-color-lightgray);
+}
+
+body {
+    color: var(--fcx-color-text);
+}
+
+h1, h2, h3, h4, form legend {
+    color: var(--fcx-color-text-heading);
+}
+
+a {
+    color: var(--fcx-color-link);
+
+    &:visited {
+        color: var(--fcx-color-link-visited);
+    }
+}
+
+.u-textColor--primary {
+    color: var(--fcx-color-primary);
+}

@@ -1,0 +1,30 @@
+@import 'main';
+
+$fcx-color-success: $fcx-color-accent;
+$fcx-color-error: #6A00E4;
+$fcx-color-warning: #DE7C00;
+
+:root {
+    // cores de Feedback ----------------------------------------------------|
+    --fcx-color-success: #{$fcx-color-success};
+    --fcx-color-error: #{$fcx-color-error};
+    --fcx-color-warning: #{$fcx-color-warning};
+
+    // variações - cor sucesso
+    --fcx-color-success-lighter: #{mix(white, $fcx-color-success, 40%)};
+    --fcx-color-success-light: #{mix(white, $fcx-color-success, 20%)};
+    --fcx-color-success-dark: #{mix(black, $fcx-color-success, 20%)};
+    --fcx-color-success-darker: #{mix(black, $fcx-color-success, 40%)};
+
+    // variações - cor erro
+    --fcx-color-error-lighter: #{mix(white, $fcx-color-error, 40%)};
+    --fcx-color-error-light: #{mix(white, $fcx-color-error, 20%)};
+    --fcx-color-error-dark: #{mix(black, $fcx-color-error, 20%)};
+    --fcx-color-error-darker: #{mix(black, $fcx-color-error, 40%)};
+
+    // variações - cor alerta
+    --fcx-color-warning-lighter: #{mix(white, $fcx-color-warning, 40%)};
+    --fcx-color-warning-light: #{mix(white, $fcx-color-warning, 20%)};
+    --fcx-color-warning-dark: #{mix(black, $fcx-color-warning, 20%)};
+    --fcx-color-warning-darker: #{mix(black, $fcx-color-warning, 40%)};
+}

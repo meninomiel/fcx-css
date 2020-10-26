@@ -1,0 +1,26 @@
+@import '../../../fonts/';
+
+:root {
+
+    // configurando fontes padrão
+    --fcx-font-primary: 'Barlow';
+    --fcx-font-secondary: 'Chivo';
+    --fcx-font-base: 'Arial';
+
+    // configurando valores base
+    --fcx-text-base-size: 1em; // 16px
+    --fcx-text-scale-ratio: 1.2; // escala de dimensionamento
+
+    // cálculo de escalas
+    --fcx-text-xs: calc(1em / (var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio)));
+    --fcx-text-sm: calc(1em / var(--fcx-text-scale-ratio));
+    --fcx-text-md: calc(1em * var(--fcx-text-scale-ratio));
+    --fcx-text-lg: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+    --fcx-text-xl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+    --fcx-text-xxl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+    --fcx-text-xxxl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-rati) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+
+    --fcx-heading-line-height: 1.2;
+    --fcx-body-line-height: 1.4;
+
+}

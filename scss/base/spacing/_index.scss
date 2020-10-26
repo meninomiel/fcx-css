@@ -1,0 +1,6 @@
+@import 'base';
+
+h1, h2, h3, h4, form legend {
+    margin-bottom: var(--fcx-space-xxs);
+    line-height: var(--fcx-heading-line-height);
+}

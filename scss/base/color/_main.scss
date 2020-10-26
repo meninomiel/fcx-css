@@ -1,0 +1,51 @@
+
+// CORES PRIMÁRIAS
+$fcx-color-primary: #E4002B;
+$fcx-color-accent: #78BE20;
+$fcx-color-secondary: #CEDC00;
+
+$fcx-color-white: white;
+$fcx-color-black: black;
+
+// função para converter HEX to RGB
+@function convertToRGB($color){
+    $red: red($color);
+    $green: green($color);
+    $blue: blue($color);
+
+    @return rgb($red, $green, $blue);
+}
+
+// variáveis globais
+:root {
+
+    // cores primárias
+    --fcx-color-primary: #{$fcx-color-primary};
+    --fcx-color-accent: #{$fcx-color-accent};
+    --fcx-color-secondary: #{$fcx-color-secondary};
+    
+    --fcx-color-white: #{$fcx-color-white};
+    --fcx-color-white-rgb: #{convertToRGB($fcx-color-white)};
+    
+    --fcx-color-black: #{$fcx-color-black};
+    --fcx-color-black-rgb: #{convertToRGB($fcx-color-black)};
+
+    // variações - cor primária
+    --fcx-color-primary-lighter: #{mix($fcx-color-white, $fcx-color-primary, 40%)};
+    --fcx-color-primary-light: #{mix($fcx-color-white, $fcx-color-primary, 20%)};
+    --fcx-color-primary-dark: #{mix($fcx-color-black, $fcx-color-primary, 20%)};
+    --fcx-color-primary-darker: #{mix($fcx-color-black, $fcx-color-primary, 40%)};
+    --fcx-color-primary-rgb: #{convertToRGB($fcx-color-primary)};
+
+    // variações - cor de destaque
+    --fcx-color-accent-lighter: #{mix($fcx-color-white, $fcx-color-accent, 40%)};
+    --fcx-color-accent-light: #{mix($fcx-color-white, $fcx-color-accent, 20%)};
+    --fcx-color-accent-dark: #{mix($fcx-color-black, $fcx-color-accent, 20%)};
+    --fcx-color-accent-darker: #{mix($fcx-color-black, $fcx-color-accent, 40%)};
+
+    // variações - cor secundária
+    --fcx-color-secondary-lighter: #{mix($fcx-color-white, $fcx-color-secondary, 40%)};
+    --fcx-color-secondary-light: #{mix($fcx-color-white, $fcx-color-secondary, 20%)};
+    --fcx-color-secondary-dark: #{mix($fcx-color-black, $fcx-color-secondary, 20%)};
+    --fcx-color-secondary-darker: #{mix($fcx-color-black, $fcx-color-secondary, 40%)};
+}

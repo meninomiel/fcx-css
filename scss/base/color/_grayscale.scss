@@ -1,0 +1,24 @@
+
+$fcx-color-lightgray: lightgray;
+$fcx-color-darkgray: darkgray;
+
+:root {
+    // escala de cinza
+
+    // tints
+    --fcx-color-lightgray: #{$fcx-color-lightgray};
+    --fcx-color-lightgray-20: #{mix(white, $fcx-color-lightgray, 20%)};
+    --fcx-color-lightgray-40: #{mix(white, $fcx-color-lightgray, 40%)};
+    --fcx-color-lightgray-60: #{mix(white, $fcx-color-lightgray, 60%)};
+    --fcx-color-lightgray-80: #{mix(white, $fcx-color-lightgray, 80%)};
+    --fcx-color-lightgray-90: #{mix(white, $fcx-color-lightgray, 90%)};
+
+    // shades 
+    --fcx-color-darkgray: darkgray;
+    --fcx-color-darkgray-20: #{mix(black, $fcx-color-darkgray, 20%)};
+    --fcx-color-darkgray-40: #{mix(black, $fcx-color-darkgray, 40%)};
+    --fcx-color-darkgray-60: #{mix(black, $fcx-color-darkgray, 60%)};
+    --fcx-color-darkgray-80: #{mix(black, $fcx-color-darkgray, 80%)};
+    --fcx-color-darkgray-90: #{mix(black, $fcx-color-darkgray, 90%)};
+    
+}
