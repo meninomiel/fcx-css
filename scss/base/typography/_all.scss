@@ -1,4 +1,4 @@
-@import 'base', '../grid/', '../color/';
+@import 'base', '../grid/_all', '../color/_all';
 
 body {
     font-size: var(--fcx-text-base-size);

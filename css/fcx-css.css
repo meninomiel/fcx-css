@@ -1,17 +1,262 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import '/scss/base/_index.scss', 
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   fcx-css.scss 3:9  root stylesheet */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --fcx-color-primary: #E4002B;
+  --fcx-color-accent: #78BE20;
+  --fcx-color-secondary: #CEDC00;
+  --fcx-color-white: white;
+  --fcx-color-white-rgb: white;
+  --fcx-color-black: black;
+  --fcx-color-black-rgb: black;
+  --fcx-color-primary-lighter: #ef6680;
+  --fcx-color-primary-light: #e93355;
+  --fcx-color-primary-dark: #b60022;
+  --fcx-color-primary-darker: #89001a;
+  --fcx-color-primary-rgb: #e4002b;
+  --fcx-color-accent-lighter: #aed879;
+  --fcx-color-accent-light: #93cb4d;
+  --fcx-color-accent-dark: #60981a;
+  --fcx-color-accent-darker: #487213;
+  --fcx-color-secondary-lighter: #e2ea66;
+  --fcx-color-secondary-light: #d8e333;
+  --fcx-color-secondary-dark: #a5b000;
+  --fcx-color-secondary-darker: #7c8400; }
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import '/scss/base/_index.scss', \d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   fcx-css.scss 3:9  root stylesheet";
-}
+:root {
+  --fcx-color-lightgray: lightgray;
+  --fcx-color-lightgray-20: gainsboro;
+  --fcx-color-lightgray-40: #e5e5e5;
+  --fcx-color-lightgray-60: #ededed;
+  --fcx-color-lightgray-80: #f6f6f6;
+  --fcx-color-lightgray-90: #fbfbfb;
+  --fcx-color-darkgray: darkgray;
+  --fcx-color-darkgray-20: #878787;
+  --fcx-color-darkgray-40: #656565;
+  --fcx-color-darkgray-60: #444444;
+  --fcx-color-darkgray-80: #222222;
+  --fcx-color-darkgray-90: #111111; }
+
+:root {
+  --fcx-color-primary: #E4002B;
+  --fcx-color-accent: #78BE20;
+  --fcx-color-secondary: #CEDC00;
+  --fcx-color-white: white;
+  --fcx-color-white-rgb: white;
+  --fcx-color-black: black;
+  --fcx-color-black-rgb: black;
+  --fcx-color-primary-lighter: #ef6680;
+  --fcx-color-primary-light: #e93355;
+  --fcx-color-primary-dark: #b60022;
+  --fcx-color-primary-darker: #89001a;
+  --fcx-color-primary-rgb: #e4002b;
+  --fcx-color-accent-lighter: #aed879;
+  --fcx-color-accent-light: #93cb4d;
+  --fcx-color-accent-dark: #60981a;
+  --fcx-color-accent-darker: #487213;
+  --fcx-color-secondary-lighter: #e2ea66;
+  --fcx-color-secondary-light: #d8e333;
+  --fcx-color-secondary-dark: #a5b000;
+  --fcx-color-secondary-darker: #7c8400; }
+
+:root {
+  --fcx-color-success: #78BE20;
+  --fcx-color-error: #6A00E4;
+  --fcx-color-warning: #DE7C00;
+  --fcx-color-success-lighter: #aed879;
+  --fcx-color-success-light: #93cb4d;
+  --fcx-color-success-dark: #60981a;
+  --fcx-color-success-darker: #487213;
+  --fcx-color-error-lighter: #a666ef;
+  --fcx-color-error-light: #8833e9;
+  --fcx-color-error-dark: #5500b6;
+  --fcx-color-error-darker: #400089;
+  --fcx-color-warning-lighter: #ebb066;
+  --fcx-color-warning-light: #e59633;
+  --fcx-color-warning-dark: #b26300;
+  --fcx-color-warning-darker: #854a00; }
+
+:root {
+  --fcx-color-text: var(--fcx-color-darkgray-40);
+  --fcx-color-text-heading: var(--fcx-color-darkgray-60);
+  --fcx-color-link: var(--fcx-color-primary);
+  --fcx-color-link-visited: var(--fcx-color-primary-darker);
+  --fcx-color-border: var(--fcx-color-lightgray); }
+
+body {
+  color: var(--fcx-color-text); }
+
+h1, h2, h3, h4, form legend {
+  color: var(--fcx-color-text-heading); }
+
+a {
+  color: var(--fcx-color-link); }
+  a:visited {
+    color: var(--fcx-color-link-visited); }
+
+.u-textColor--primary {
+  color: var(--fcx-color-primary); }
+
+:root {
+  --fcx-space-xxxs: 0.25em;
+  --fcx-space-xxs: 0.375em;
+  --fcx-space-xs: 0.5em;
+  --fcx-space-sm: 0.75em;
+  --fcx-space-md: 1.25em;
+  --fcx-space-lg: 2em;
+  --fcx-space-xl: 3.25em;
+  --fcx-space-xxl: 5.25em;
+  --fcx-space-xxxl: 8.5em; }
+
+h1, h2, h3, h4, form legend {
+  margin-bottom: var(--fcx-space-xxs);
+  line-height: var(--fcx-heading-line-height); }
+
+:root {
+  --fcx-font-primary: 'Barlow';
+  --fcx-font-secondary: 'Chivo';
+  --fcx-font-base: 'Arial';
+  --fcx-text-base-size: 1em;
+  --fcx-text-scale-ratio: 1.2;
+  --fcx-text-xs: calc(1em / (var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio)));
+  --fcx-text-sm: calc(1em / var(--fcx-text-scale-ratio));
+  --fcx-text-md: calc(1em * var(--fcx-text-scale-ratio));
+  --fcx-text-lg: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-text-xl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-text-xxl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-text-xxxl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-rati) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-heading-line-height: 1.2;
+  --fcx-body-line-height: 1.4; }
+
+:root {
+  --fcx-color-primary: #E4002B;
+  --fcx-color-accent: #78BE20;
+  --fcx-color-secondary: #CEDC00;
+  --fcx-color-white: white;
+  --fcx-color-white-rgb: white;
+  --fcx-color-black: black;
+  --fcx-color-black-rgb: black;
+  --fcx-color-primary-lighter: #ef6680;
+  --fcx-color-primary-light: #e93355;
+  --fcx-color-primary-dark: #b60022;
+  --fcx-color-primary-darker: #89001a;
+  --fcx-color-primary-rgb: #e4002b;
+  --fcx-color-accent-lighter: #aed879;
+  --fcx-color-accent-light: #93cb4d;
+  --fcx-color-accent-dark: #60981a;
+  --fcx-color-accent-darker: #487213;
+  --fcx-color-secondary-lighter: #e2ea66;
+  --fcx-color-secondary-light: #d8e333;
+  --fcx-color-secondary-dark: #a5b000;
+  --fcx-color-secondary-darker: #7c8400; }
+
+:root {
+  --fcx-color-lightgray: lightgray;
+  --fcx-color-lightgray-20: gainsboro;
+  --fcx-color-lightgray-40: #e5e5e5;
+  --fcx-color-lightgray-60: #ededed;
+  --fcx-color-lightgray-80: #f6f6f6;
+  --fcx-color-lightgray-90: #fbfbfb;
+  --fcx-color-darkgray: darkgray;
+  --fcx-color-darkgray-20: #878787;
+  --fcx-color-darkgray-40: #656565;
+  --fcx-color-darkgray-60: #444444;
+  --fcx-color-darkgray-80: #222222;
+  --fcx-color-darkgray-90: #111111; }
+
+:root {
+  --fcx-color-primary: #E4002B;
+  --fcx-color-accent: #78BE20;
+  --fcx-color-secondary: #CEDC00;
+  --fcx-color-white: white;
+  --fcx-color-white-rgb: white;
+  --fcx-color-black: black;
+  --fcx-color-black-rgb: black;
+  --fcx-color-primary-lighter: #ef6680;
+  --fcx-color-primary-light: #e93355;
+  --fcx-color-primary-dark: #b60022;
+  --fcx-color-primary-darker: #89001a;
+  --fcx-color-primary-rgb: #e4002b;
+  --fcx-color-accent-lighter: #aed879;
+  --fcx-color-accent-light: #93cb4d;
+  --fcx-color-accent-dark: #60981a;
+  --fcx-color-accent-darker: #487213;
+  --fcx-color-secondary-lighter: #e2ea66;
+  --fcx-color-secondary-light: #d8e333;
+  --fcx-color-secondary-dark: #a5b000;
+  --fcx-color-secondary-darker: #7c8400; }
+
+:root {
+  --fcx-color-success: #78BE20;
+  --fcx-color-error: #6A00E4;
+  --fcx-color-warning: #DE7C00;
+  --fcx-color-success-lighter: #aed879;
+  --fcx-color-success-light: #93cb4d;
+  --fcx-color-success-dark: #60981a;
+  --fcx-color-success-darker: #487213;
+  --fcx-color-error-lighter: #a666ef;
+  --fcx-color-error-light: #8833e9;
+  --fcx-color-error-dark: #5500b6;
+  --fcx-color-error-darker: #400089;
+  --fcx-color-warning-lighter: #ebb066;
+  --fcx-color-warning-light: #e59633;
+  --fcx-color-warning-dark: #b26300;
+  --fcx-color-warning-darker: #854a00; }
+
+:root {
+  --fcx-color-text: var(--fcx-color-darkgray-40);
+  --fcx-color-text-heading: var(--fcx-color-darkgray-60);
+  --fcx-color-link: var(--fcx-color-primary);
+  --fcx-color-link-visited: var(--fcx-color-primary-darker);
+  --fcx-color-border: var(--fcx-color-lightgray); }
+
+body {
+  color: var(--fcx-color-text); }
+
+h1, h2, h3, h4, form legend {
+  color: var(--fcx-color-text-heading); }
+
+a {
+  color: var(--fcx-color-link); }
+  a:visited {
+    color: var(--fcx-color-link-visited); }
+
+.u-textColor--primary {
+  color: var(--fcx-color-primary); }
+
+body {
+  font-size: var(--fcx-text-base-size);
+  font-family: var(--fcx-font-primary), var(--fcx-font-base); }
+
+.text--xxxl {
+  font-size: var(--fcx-text-xxxl); }
+
+h1, .text--xxl {
+  font-size: var(--fcx-text-xxl); }
+
+h2, .text--xl {
+  font-size: var(--fcx-text-xl); }
+
+h3, .text--lg {
+  font-size: var(--fcx-text-lg); }
+
+h4, .text--md {
+  font-size: var(--fcx-text-md); }
+
+.text--sm, small {
+  font-size: var(--fcx-text-sm); }
+
+.text--xs {
+  font-size: var(--fcx-text-xs); }
+
+p {
+  line-height: var(--fcx-body-line-height); }
+
+@media (min-width: 768px) {
+  :root {
+    --fcx-text-base-size: 1em;
+    --fcx-text-scale-ratio: 1.2; } }
+
+@media (max-width: 576px) {
+  :root {
+    --fcx-text-base-size: 1.25em;
+    --fcx-text-scale-ratio: 1.4; } }

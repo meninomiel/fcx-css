@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --fcx-font-primary: 'Barlow';
+  --fcx-font-secondary: 'Chivo';
+  --fcx-font-base: 'Arial';
+  --fcx-text-base-size: 1em;
+  --fcx-text-scale-ratio: 1.2;
+  --fcx-text-xs: calc(1em / (var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio)));
+  --fcx-text-sm: calc(1em / var(--fcx-text-scale-ratio));
+  --fcx-text-md: calc(1em * var(--fcx-text-scale-ratio));
+  --fcx-text-lg: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-text-xl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-text-xxl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-text-xxxl: calc(1em * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-rati) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio) * var(--fcx-text-scale-ratio));
+  --fcx-heading-line-height: 1.2;
+  --fcx-body-line-height: 1.4; }
