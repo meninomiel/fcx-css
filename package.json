@@ -1,6 +1,6 @@
 {
   "name": "fcx-css",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-alpha.2",
   "description": "Kit de estilos do FCx Labs.",
   "main": "fcx-css.scss",
   "style": "fcx-css/css/fcx-css.min.css",
